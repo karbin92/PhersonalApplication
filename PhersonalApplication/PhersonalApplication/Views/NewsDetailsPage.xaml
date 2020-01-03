@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhersonalApplication.Views.NewsDetailsPage">
     <ContentPage.Content>
-        <StackLayout Margin="20">
+        <ScrollView Margin="20">
             <Label Grid.Column="0" Text="{Binding ID}" FontSize="15" TextColor="Red" />
 
-            <Label Grid.Column="0" Text="{Binding Rubrik}" FontSize="15" TextColor="Red" />
-            <Label Grid.Column="1" Text="{Binding Underrubrik}" FontSize="15" TextColor="Black" />
-            <Label Grid.Column="2" Text="{Binding Beskrivning}" FontSize="15" TextColor="Black" />
-        </StackLayout>
+            <Label Text="{Binding Rubrik}" FontSize="15" TextColor="Red" />
+            <Label Text="{Binding Underrubrik}" FontSize="15" TextColor="Black" />
+            <Label Text="{Binding Beskrivning}" FontSize="15" TextColor="Black" />
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
