@@ -7,6 +7,10 @@ namespace PhersonalApplication.Models
 {
     public class News
     {
+        public string BildURL { get; set; }
+        public string Link1 { get; set; }
+        public string Link2 { get; set; }
+
         public int ID { get; set; }
 
 

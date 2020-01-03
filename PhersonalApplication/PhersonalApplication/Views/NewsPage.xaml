@@ -4,24 +4,24 @@
              x:Class="PhersonalApplication.Views.NewsPage">
     <Grid Margin="24">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
+            <!--<RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>-->
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
+        <!--<Grid.ColumnDefinitions>
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="220"/>-->
 
-        </Grid.ColumnDefinitions>
-        <Label FontAttributes="Italic" Text="Nyheter" Grid.Row="0"  TextColor="Black" />
+        <!--</Grid.ColumnDefinitions>-->
+        <!--<Label FontAttributes="Italic" Text="Nyheter" Grid.Row="0"  TextColor="Black" />
         <StackLayout Grid.Row="1" Orientation="Horizontal">
             <Label Grid.Column="0" Text="Rubrik" FontSize="Micro" TextColor="Red" />
             <Label Grid.Column="1" Text="Underrubrik" FontSize="Micro" TextColor="Red" />
             <Label Grid.Column="2" Text="Beskrivning" FontSize="Micro" TextColor="Red" />
-        </StackLayout>
+        </StackLayout>-->
         <!--<ListView BackgroundColor="AliceBlue" Grid.Row="2" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -37,7 +37,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>-->
-        <ListView BackgroundColor="AliceBlue" Grid.Row="2" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
+        
+        <ListView BackgroundColor="AliceBlue" Grid.Row="0" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
