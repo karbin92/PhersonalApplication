@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="PhersonalApplication.Views.HomePage"
+             Title="Nyheter">
+    <!--<ContentPage.Content>
+        <StackLayout">
+            <Label Text="Senaste nyheterna hamnar här" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <Label Text="{Binding Rubrik}" TextColor="Black"/>
+            <Label Text="{Binding Beskrivning}" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>-->
+    <ContentPage.Content>
+
+        <ListView x:Name="NyheterListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label FontAttributes="Bold" Text="{Binding Rubrik}" TextColor="Black"></Label>
+                            <Label Text="{Binding Beskrivning}" TextColor="Black"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
