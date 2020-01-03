@@ -2,18 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="PhersonalApplication.Views.HomePage"
-             Title="Nyheter">
-    <!--<ContentPage.Content>
-        <StackLayout">
-            <Label Text="Senaste nyheterna hamnar här" HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand" />
-            <Label Text="{Binding Rubrik}" TextColor="Black"/>
-            <Label Text="{Binding Beskrivning}" TextColor="Black"/>
-        </StackLayout>
-    </ContentPage.Content>-->
+             Title="Profil">
     <ContentPage.Content>
-
-        <ListView x:Name="NyheterListView">
+        <StackLayout>
+            <Label Text="Min Profil" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <!--Label Text="{Binding Rubrik}" TextColor="Black"/>
+            <Label Text="{Binding Beskrivning}" TextColor="Black"/>-->
+        </StackLayout>
+    </ContentPage.Content>
+    
+    <!--<ContentPage.Content>-->
+        <!--<ListView x:Name="NyheterListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -24,6 +24,6 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+        </ListView>--><!--
+    </ContentPage.Content>-->
 </ContentPage>

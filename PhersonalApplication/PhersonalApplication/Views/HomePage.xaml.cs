@@ -13,7 +13,7 @@ namespace PhersonalApplication.Views
         {
             InitializeComponent();
 
-            GetHome();
+            //GetHome();
         }
 
         //async void OnUpcomingAppointmentsButtonClicked(object sender, EventArgs e)
@@ -21,17 +21,17 @@ namespace PhersonalApplication.Views
         //    await Navigation.PushAsync(new UpcomingAppointmentsPage());
         //}
 
-        async void GetHome()
-        {
-            HttpClient client = new HttpClient();
+        //async void GetHome()
+        //{
+        //    HttpClient client = new HttpClient();
 
-            var response = await client.GetStringAsync("http://193.10.202.76/PhersonalklubbenREST/api/nyheters");
+        //    var response = await client.GetStringAsync("http://193.10.202.76/PhersonalklubbenREST/api/nyheters");
 
-            var nyheter = JsonConvert.DeserializeObject<List<Home>>(response);
+        //    var nyheter = JsonConvert.DeserializeObject<List<Home>>(response);
 
-            NyheterListView.ItemsSource = nyheter;
+        //    //NyheterListView.ItemsSource = nyheter;
 
-        }
+        //}
 
 
     }

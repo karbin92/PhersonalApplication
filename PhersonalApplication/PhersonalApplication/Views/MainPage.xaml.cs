@@ -14,7 +14,7 @@ namespace PhersonalApplication.Views
         public MainPage()
         {
             InitializeComponent();
-            BarBackgroundColor = Color.FromHex("#484559");
+            BarBackgroundColor = Color.Gray;
             BarTextColor = Color.White;
         }
     }

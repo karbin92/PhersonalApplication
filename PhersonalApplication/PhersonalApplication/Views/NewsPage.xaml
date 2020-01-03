@@ -22,7 +22,7 @@
             <Label Grid.Column="1" Text="Underrubrik" FontSize="Micro" TextColor="Red" />
             <Label Grid.Column="2" Text="Beskrivning" FontSize="Micro" TextColor="Red" />
         </StackLayout>
-        <ListView BackgroundColor="AliceBlue" Grid.Row="2" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
+        <!--<ListView BackgroundColor="AliceBlue" Grid.Row="2" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -32,6 +32,18 @@
                                 <Label Grid.Column="1" Text="{Binding Underrubrik}" FontSize="10" TextColor="Black" />
                                 <Label Grid.Column="2" Text="{Binding Beskrivning}" FontSize="10" TextColor="Black" />
                             </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <ListView BackgroundColor="AliceBlue" Grid.Row="2" ItemTapped="NewsList_TappedAsync" ItemsSource="{Binding News}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label FontAttributes="Bold" Text="{Binding Rubrik}" TextColor="Black"></Label>
+                            <Label Text="{Binding Beskrivning}" TextColor="Black"></Label>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
