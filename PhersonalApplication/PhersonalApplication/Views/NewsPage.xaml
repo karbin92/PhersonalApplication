@@ -44,7 +44,7 @@
                     <ViewCell>
                         <StackLayout Orientation="Vertical">
                             <Label FontAttributes="Bold" Text="{Binding Rubrik}" TextColor="Black"></Label>
-                            <Label Text="{Binding Beskrivning}" TextColor="Black"></Label>
+                            <Label Text="{Binding Underrubrik}" TextColor="Black"></Label>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
