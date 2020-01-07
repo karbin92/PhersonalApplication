@@ -56,10 +56,10 @@ namespace PhersonalApplication.Views
             //};
         }
 
-        async void OnSignUpButtonClicked(object sender, EventArgs e)
-        {
-            // await Navigation.PushAsync(new SignUpPageCS());
-        }
+        //async void OnSignUpButtonClicked(object sender, EventArgs e)
+        //{
+        //    // await Navigation.PushAsync(new SignUpPageCS());
+        //}
 
         async void OnLoginButtonClicked(object sender, EventArgs e)
         {
@@ -78,7 +78,7 @@ namespace PhersonalApplication.Views
             }
             else
             {
-                messageLabel.Text = "Login failed";
+                messageLabel.Text = "Inloggning Misslyckades!";
                 passwordEntry.Text = string.Empty;
             }
         }
