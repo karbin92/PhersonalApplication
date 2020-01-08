@@ -159,4 +159,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\phersonalstor.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ProfileIcon.png" />
+  </ItemGroup>
 </Project>

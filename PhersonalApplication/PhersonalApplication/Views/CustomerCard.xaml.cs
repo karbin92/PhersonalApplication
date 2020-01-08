@@ -13,7 +13,7 @@ namespace PhersonalApplication.Views
 {
     public partial class CustomerCard : ContentPage
     {
-        public static MedlemViewModel medlemViewModel { get; set; } = new MedlemViewModel();
+       
         public static MedlemskontoViewModel medlemskontoViewModel { get; set; } = new MedlemskontoViewModel();
 
         Medlemmar medlem = new Medlemmar();

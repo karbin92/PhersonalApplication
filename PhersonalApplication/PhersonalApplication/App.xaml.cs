@@ -14,7 +14,7 @@ namespace PhersonalApplication
         public static NewsViewmodel newsViewmodel { get; set; } = new NewsViewmodel();
         public static MedlemskontoViewModel medlemskontoViewModel { get; set; } = new MedlemskontoViewModel();
         public static MedlemViewModel medlemViewModel { get; set; } = new MedlemViewModel();
-        int id;
+        
 
         public static bool IsUserLoggedIn { get; set; }
         public App()

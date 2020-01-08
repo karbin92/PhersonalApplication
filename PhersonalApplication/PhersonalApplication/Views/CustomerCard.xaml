@@ -20,10 +20,18 @@
                 <BoxView Color="Gray"
                    HeightRequest="2"
                    HorizontalOptions="Fill" />
-                <Label Text="{Binding Institution}"/>
-
-                <Label Text="{Binding GiltighetsÅr}"/>
-                <Label Text="{Binding RegistreringsDatum}"/>
+                <Label FontSize="Micro">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Institution: "/>
+                            <Span Text="{Binding Institution}"/>
+                            <Span Text=" Giltighetsår: "/>
+                            <Span Text="{Binding GiltighetsÅr}"/>
+                            <Span Text=" Registreringsdatum: "/>
+                            <Span Text="{Binding RegistreringsDatum}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
             </StackLayout>
         </Frame>
     </ContentPage.Content>

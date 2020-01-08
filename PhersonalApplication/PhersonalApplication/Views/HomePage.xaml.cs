@@ -4,36 +4,23 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using PhersonalApplication.Models;
+using PhersonalApplication.ViewModels;
 
 namespace PhersonalApplication.Views
 {
     public partial class HomePage : ContentPage
     {
+        public static MedlemskontoViewModel medlemskontoViewModel { get; set; } = new MedlemskontoViewModel();
+
+        Medlemmar medlem = new Medlemmar();
         public HomePage()
         {
             InitializeComponent();
 
-            //GetHome();
+            medlem = App.medlemskontoViewModel.ReturnMember();
+
+            BindingContext = medlem;
         }
-
-        //async void OnUpcomingAppointmentsButtonClicked(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushAsync(new UpcomingAppointmentsPage());
-        //}
-
-        //async void GetHome()
-        //{
-        //    HttpClient client = new HttpClient();
-
-        //    var response = await client.GetStringAsync("http://193.10.202.76/PhersonalklubbenREST/api/nyheters");
-
-        //    var nyheter = JsonConvert.DeserializeObject<List<Home>>(response);
-
-        //    //NyheterListView.ItemsSource = nyheter;
-
-        //}
-
-
     }
 }
 
