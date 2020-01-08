@@ -10,7 +10,7 @@ namespace PhersonalApplication.Models
         {
             Medlemskonto = new HashSet<Medlemskonto>();
         }
-
+        public string SkapadAv { get; set; }
         public int ID { get; set; }
 
         //[Required(ErrorMessage = "Ange ett giltigt förnamn")]

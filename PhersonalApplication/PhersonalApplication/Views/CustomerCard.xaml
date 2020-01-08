@@ -3,8 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhersonalApplication.Views.CustomerCard">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Card go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Frame BorderColor="Gray"
+               Padding="5"
+               CornerRadius="5"
+               Margin="20"
+               HasShadow="True">
+            <!--Rotation="90"-->
+            <StackLayout>
+                <Image Source="phersonalstor.jpg" />
+                     <Label Text="Förnamn Efternamn"
+                       FontSize="Medium"
+                       FontAttributes="Bold" />
+                    <BoxView Color="Gray"
+                            HeightRequest="2"
+                            HorizontalOptions="Fill" />
+                <Label Text="Institution:"/>
+                     <!--<Label Text="Telefonnummer:"/>-->
+                        <!--<Label Text="Epost:"/>-->
+                         <Label Text="Giltighetsår:"/>
+                           <Label Text="Registreringsdatum:"/>
+            </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

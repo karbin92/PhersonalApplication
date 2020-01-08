@@ -156,4 +156,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\newsicon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\phersonalstor.jpg" />
+  </ItemGroup>
 </Project>
