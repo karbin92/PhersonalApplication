@@ -69,8 +69,20 @@ namespace PhersonalApplication.Views
                 Lösenord = passwordEntry.Text
             };
 
-            var isValid = App.medlemskontoViewModel.LoginAsync(user);
-            if (await isValid)
+            Medlemmar loggedInMember = new Medlemmar();
+           loggedInMember  = await App.medlemskontoViewModel.LoginAsync(user);
+            var isValid = false;
+
+            if (loggedInMember != null)
+            {
+                isValid = true;
+            }
+            else
+            {
+
+            }
+
+            if (isValid)
             {
                 App.IsUserLoggedIn = true;
                 Navigation.InsertPageBefore(new MainPage(), this);

@@ -10,7 +10,21 @@ namespace PhersonalApplication.ViewModels
 {
    public class MedlemskontoViewModel
     {
-        public async System.Threading.Tasks.Task<bool> LoginAsync(Medlemskonto medlem)
+        Medlemmar loggedInMember = new Medlemmar();
+
+        public int id { get; set; }
+
+        public int ReturnID()
+        {
+            return this.id;
+        }
+
+        public Medlemmar ReturnMember()
+        {
+            return this.loggedInMember;
+        }
+
+        public async System.Threading.Tasks.Task<Medlemmar> LoginAsync(Medlemskonto medlem)
         {
 
             using (HttpClient client = new HttpClient())
@@ -25,16 +39,22 @@ namespace PhersonalApplication.ViewModels
                 var result = client.PostAsync("api/medlemslogin", byteContent).Result;
 
                 string data = await result.Content.ReadAsStringAsync();
+                loggedInMember = JsonConvert.DeserializeObject<Medlemmar>(data);
 
-                bool success = false;
+                id = loggedInMember.ID;
+
+
+             //   bool success = false;
+
                 if (result.IsSuccessStatusCode)
                 {
-                    success = true;
-                    return success;
+                  //  success = true;
+                    return loggedInMember;
                 }
                 else
                 {
-                    return success;
+                    Medlemmar empty = new Medlemmar();
+                    return empty;
                 }
  
             }

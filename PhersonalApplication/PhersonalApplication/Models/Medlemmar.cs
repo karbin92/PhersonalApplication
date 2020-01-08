@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PhersonalApplication.Models
 {
-    public class Medlem
+    public class Medlemmar
     {
-        public Medlem()
+        public Medlemmar()
         {
             Medlemskonto = new HashSet<Medlemskonto>();
         }

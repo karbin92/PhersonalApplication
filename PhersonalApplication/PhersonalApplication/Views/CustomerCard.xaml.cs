@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PhersonalApplication.Models;
+using PhersonalApplication.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +13,20 @@ namespace PhersonalApplication.Views
 {
     public partial class CustomerCard : ContentPage
     {
+        public static MedlemViewModel medlemViewModel { get; set; } = new MedlemViewModel();
+        public static MedlemskontoViewModel medlemskontoViewModel { get; set; } = new MedlemskontoViewModel();
+
+        Medlemmar medlem = new Medlemmar();
+
+
         public CustomerCard()
         {
             InitializeComponent();
+
+            medlem = App.medlemskontoViewModel.ReturnMember();
+
+            BindingContext = medlem;
+
         }
     }
 }

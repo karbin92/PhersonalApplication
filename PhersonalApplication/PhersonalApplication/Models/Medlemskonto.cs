@@ -18,6 +18,6 @@ namespace PhersonalApplication.Models
 
         public int MedlemsID { get; set; }
 
-        public virtual Medlem Medlemmar { get; set; }
+        public virtual Medlemmar Medlemmar { get; set; }
     }
 }
