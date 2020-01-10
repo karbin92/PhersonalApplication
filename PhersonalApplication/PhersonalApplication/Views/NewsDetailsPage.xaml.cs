@@ -15,7 +15,6 @@ namespace PhersonalApplication.Views
 		public NewsDetailsPage ()
 		{
 			InitializeComponent ();
-
 		}
 	}
 }

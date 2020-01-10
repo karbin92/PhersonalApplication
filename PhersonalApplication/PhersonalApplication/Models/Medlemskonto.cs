@@ -8,12 +8,8 @@ namespace PhersonalApplication.Models
     {
         public int ID { get; set; }
 
-        //[Required]
-        //[StringLength(60)]
         public string Epost { get; set; }
 
-        //[Required]
-        //[StringLength(100)]
         public string Lösenord { get; set; }
 
         public int MedlemsID { get; set; }

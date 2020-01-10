@@ -7,8 +7,4 @@
     <local:CustomerCard Title="Kort" IconImageSource="customercard.png"/>
     <local:Activities Title="Aktiviteter" IconImageSource="NotificationIcon.png" />
     <local:NewsPage Title="NyheterTest" IconImageSource="newsicon.png" />
-    
-            
-        
-
 </TabbedPage>

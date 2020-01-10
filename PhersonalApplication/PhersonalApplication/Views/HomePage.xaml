@@ -11,14 +11,6 @@
                HasShadow="True">
             <!--Rotation="90"-->
             <StackLayout>
-
-                <!--<Label Text="{Binding Institution}"/>
-                <Label Text="{Binding Telefonnummer}"/>
-                <Label Text="{Binding Epostadress}"/>
-                <Label Text="{Binding GiltighetsÅr}"/>
-                <Label Text="{Binding RegistreringsDatum}"/>-->
-                
-
                 <Image Source="ProfileIcon.png" />
                 <Label Text="{Binding Förnamn} "
                    FontSize="Medium"

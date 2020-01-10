@@ -13,9 +13,7 @@ namespace PhersonalApplication.Models
         public string SkapadAv { get; set; }
         public int ID { get; set; }
 
-
         public string Rubrik { get; set; }
-
 
         public string Underrubrik { get; set; }
 

@@ -23,15 +23,13 @@ namespace PhersonalApplication
             App.newsViewmodel.ReadNews();
             App.medlemViewModel.ReadMembers();
 
-           // MainPage = new NavigationPage(new MainPage());
-
             if (!IsUserLoggedIn)
             {
                 MainPage = new NavigationPage(new LoginPage());
             }
             else
             {
-                // MainPage = new NavigationPage(new LoginNavigation.MainPage());
+                
                 MainPage = new NavigationPage(new MainPage());
             }
         }

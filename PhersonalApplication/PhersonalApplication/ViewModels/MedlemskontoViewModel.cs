@@ -44,11 +44,10 @@ namespace PhersonalApplication.ViewModels
                 id = loggedInMember.ID;
 
 
-             //   bool success = false;
 
                 if (result.IsSuccessStatusCode)
                 {
-                  //  success = true;
+                  
                     return loggedInMember;
                 }
                 else
